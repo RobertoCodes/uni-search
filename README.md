@@ -34,6 +34,7 @@ This application includes the following features:
 
 ## Testing
 Tests have been implemented using Jest and React Testing Library
+
 Tests can be run (with coverage) with: 
 ```bash
 npm run test
