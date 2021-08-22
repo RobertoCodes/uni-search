@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-In addition to Next.js, this project utilizes [React](https://reactjs.org/), [Material_UI](https://material-ui.com/), [Knex](https://knexjs.org/), and a [sqllite]https://www.sqlite.org/index.html) database
+In addition to Next.js, this project utilizes [React](https://reactjs.org/), [Material UI](https://material-ui.com/), [Knex](https://knexjs.org/), and a [sqllite](https://www.sqlite.org/index.html) database
 
 ## Getting Started
 First, in order to create and populate a sqllite database:
