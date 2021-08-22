@@ -1,34 +1,44 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+In addition to Next.js, this project utilizes [React](https://reactjs.org/), [Material_UI](https://material-ui.com/), [Knex](https://knexjs.org/), and a [sqllite]https://www.sqlite.org/index.html) database
 
-First, run the development server:
+## Getting Started
+First, in order to create and populate a sqllite database:
+
+```bash
+npm run seed
+```
+
+This will create the database with 'users', 'favorites', and 'unis' tables. This script populates the 'unis' table using the api response at https://universities.hipolabs.com/search
+
+Then you should be ready to run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application in action!
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed as such: [http://localhost:3000/api/unis](http://localhost:3000/api/unis).
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Features
+This application includes the following features: 
+- Searching the database of universities by name and filtering by country
+- Authentication in order to 'favorite' universities, storing them in their own view. Favorites can be toggled using the <3 icons for logged in users. 
+- Email and password validation 
+- A global 'error banner' for reporting errors to users
+- Linting (ESlint) and Prettier configurations 
 
-To learn more about Next.js, take a look at the following resources:
+## Testing
+Tests have been implemented using Jest and React Testing Library
+Tests can be run (with coverage) with: 
+```bash
+npm run test
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Still To Come
+- More tests!
+- More types / better type safety
