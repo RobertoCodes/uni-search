@@ -30,7 +30,7 @@ This application includes the following features:
 - Authentication in order to 'favorite' universities, storing them in their own view. Favorites can be toggled using the <3 icons for logged in users. 
 - Email and password validation 
 - A global 'error banner' for reporting errors to users
-- Linting (ESlint) and Prettier configurations 
+- Linting (ESlint) and Prettier configurations ```npm run lint```
 
 ## Testing
 Tests have been implemented using Jest and React Testing Library
@@ -42,3 +42,5 @@ npm run test
 ## Still To Come
 - More tests!
 - More types / better type safety
+- Resolve errors during test runs
+- Resolve eslint warnings
