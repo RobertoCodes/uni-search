@@ -22,7 +22,11 @@
     "radix": "off",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "off",
-    "jsx-a11y/anchor-is-valid": "off",
+    "typescript-eslint/no-non-null-assertion": "off",
+    "react/jsx-props-no-spreading": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/aria-role": "warn",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-filename-extension": [

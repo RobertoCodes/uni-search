@@ -7,15 +7,6 @@ import { connectToDb } from '../../db'
 
 const SALT_ROUNDS = 10
 
-async function createUser(
-  db: unknown,
-  email: string,
-  password: string,
-  callback: (user: { userId: string; email: string }) => void
-): Promise<void> {
-  callback(user)
-}
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse

@@ -32,7 +32,7 @@ export default function NavBar(): JSX.Element {
       tabValue = 0
       break
   }
-  const handleLogoutClick = async () => {
+  const handleLogoutClick = async (): void => {
     try {
       await axios.post('/api/logout')
       setUser({})
@@ -57,7 +57,9 @@ export default function NavBar(): JSX.Element {
           </Link>
           <Link href={user?.userId ? '#' : '/login'}>
             <Tab
-              onClick={user?.userId ? () => handleLogoutClick() : () => void 0}
+              onClick={
+                user?.userId ? () => handleLogoutClick() : () => undefined
+              }
               icon={<AccountCircle />}
               label={user?.userId ? 'Log out' : 'Log in'}
             />
