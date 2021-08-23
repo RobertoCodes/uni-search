@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 In addition to Next.js, this project utilizes [React](https://reactjs.org/), [Material UI](https://material-ui.com/), [Knex](https://knexjs.org/), and a [sqllite](https://www.sqlite.org/index.html) database
 
 ## Getting Started
-Please note: This application has been tested on node version v14.16.1.
+**note**: This application has been tested on node **v14.16.1**.
 
 First, in order to create and populate a sqllite database:
 
